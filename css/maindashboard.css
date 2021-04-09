@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma;
+}
+
+header{
+    display: flex;
+    height:5vw;
+    background-color: #279486;
+    box-shadow:  0px 3px 3px #228276,
+                0px 1px 1px #000;;
+}
+.logo{
+    width:9vw;
+    margin-left: 2vw;
+    padding:0vw;
+    height: auto;
+}
+.user{
+    display: flex;
+    margin-left: 70vw;
+    float: right;
+    text-align: center;
+}
+.user img{
+    width: 2vw;
+    height: 2vw;
+    margin-top: 1.5vw;
+}
+.user h4{
+    margin-top: 2vw;
+    margin-left: 1vw;
+    color: white;
+   
+}
+.user button{
+    padding: 0.3vw 1vw;
+    padding-bottom: 1.5vw;
+    height: 2vw;
+    margin-top: 1.5vw;
+    margin-left: 4vw;
+    border: none;
+    outline: none;
+    border-radius: .5vw;
+    background: linear-gradient(145deg, #2a9e8f, #238579);
+    box-shadow:  2px 8px 7px #1b665c,
+             -2px -1px 7px #33c2b0;
+    font-size: 1.1vw;
+    font-weight:450;
+}
+.user button:hover{
+    background: #279486;
+    box-shadow: inset 2px 2px 4px #1b665c,
+            inset -.5px -1px 4px #33c2b0;
+}
+
+
+
+#available{
+    margin-top: 5vw;
+    margin-left: 37.5vw;
+    font-size: large;
+    padding:1vw 3vw;
+    border: none;
+    outline:none;
+    border-radius: 1vw;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 5px #bebebe,
+             -2px -2px 5px #ffffff;
+}
+
+#inuse{
+    font-size: large;
+    margin-left: 3vw;
+    padding: 1vw 3vw;
+    border: none;
+    outline:none;
+    border-radius: 1vw;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 5px #bebebe,
+             -2px -2px 5px #ffffff;
+}
+
+#available:hover,#available:focus,#inuse:hover,#inuse:focus{
+    background: #e0e0e0;
+    color: #264653;
+    box-shadow: inset 2px 3px 5px #bebebe,
+             inset -2px -2px 5px #ffffff;
+}
+
+.available{
+    display: none;
+    margin-top: 5vw;
+    margin-left: 32vw;
+    border:none;
+    outline: none;
+    padding-left: 4vw;
+    padding-bottom: 2vw;
+    width:40vw;
+    background: #e0e0e0;
+    border-radius: 2vw;
+    box-shadow: inset 2px 2px 5px #bebebe,
+              inset -2px -2px 10px #ffffff;
+}
+.inuse
+{
+    display: none;
+    padding-left: 0vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 32vw;
+    border:none;
+    width:40vw;
+    background: #e0e0e0;
+    border-radius: 2vw;
+    box-shadow: inset 2px 2px 5px #bebebe,
+              inset -2px -2px 10px #ffffff;
+    outline: none;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-bottom: 2vw;
+}
+
+.available input,.inuse a{
+    margin-top: 1.5vw;
+    margin-left: 5vw;
+    height:2vw;
+    text-decoration: none;
+}
+
+.available input
+{
+    outline:none;
+    border:2px solid #279486;
+    border-radius: 0.5vw;
+}
+
+.available button,.inuse button{
+    margin-top: 1.5vw;
+    margin-left: 5vw;
+    height:2vw;
+    padding:0.6vw 2vw;
+    padding-bottom: 1.6vw;
+    border: none;
+    outline: none;
+    background: #e0e0e0;
+    border-radius: 2vw;
+    box-shadow:  2px 2px 5px #bebebe,
+               -2px -2px 10px #ffffff;
+
+}
+.available button:hover,.inuse button:hover{
+    font-weight: 600;
+    background: #279486;
+    color:white;
+}
+.inuse b{
+    color:#1b665c;
+}
+

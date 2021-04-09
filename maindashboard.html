@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="css/maindashboard.css">
+    <title>Main Dashboard</title>
+</head>
+<body>
+    <header>
+        <a href="#">
+            <img src="img/logo.png" class="logo">
+        </a>
+        <div class="user">
+            <img src="img/user icon.png">
+            <h4 id="username"> abcdef</h4>
+            <button onclick="location.href='logout.html'">Logout</button>
+        </div>
+    </header>
+    <button id="available" onclick="displayAvailable()">Available</button>
+    <button id="inuse" onclick="displayInuse()">InUse</button>
+    <div class="box">
+        <div class="available">
+        </div>
+        <div class="inuse">
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAPQWbGHZ5ehLCln4fDKSlWbCj_w3HN0w4",
+    authDomain: "dripon-product.firebaseapp.com",
+    projectId: "dripon-product",
+    storageBucket: "dripon-product.appspot.com",
+    messagingSenderId: "302869427942",
+    appId: "1:302869427942:web:ca12a8f27390552312ad27",
+    measurementId: "G-YJW81PN5R9"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+  const fs = firebase.firestore();
+</script>
+<script src="js/maindashboard.js"></script>
+</html>

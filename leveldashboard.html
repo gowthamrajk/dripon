@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <a href="maindashboard.html">
+            <img src="img/logo.png" class="logo">
+        </a>
+        <div class="user">
+            <img src="img/user icon.png">
+            <h4 id="username">hokfjkello</h4>
+            <button onclick="location.href='maindashboard.html'">Dashboard</button>
+            <span id="group"> 
+                 <button class="selected1" onclick="window.location='#modalRemainder'">
+                  <i class="fa fa-bell"></i> 
+                 </button> 
+                 <span class="badge" id="badge"><b>0</b>
+                 </span> 
+               </span>
+            <button onclick="location.href='logout.html'">Logout</button>
+        </div>
+    </header>
+
+    <div data-ml-modal id="modalRemainder">
+  <a href="#!" class="modal-overlay"></a>
+  <div class="modal-dialog modal-dialog-lg">
+    <a href="#!" class="modal-close">&times;</a>
+    <h3 style="font-family:Georgia"><font color="maroon"><b><center>Drip Level Alerts</center></b></font></h3>
+    <div class="modal-content">
+    <div class="wrapper1">
+         <div class="form-conteniar">
+         <span class="threshold" id="threshold"></span><br>
+         </div>
+     </div>
+    </div>
+    
+  </div>
+</div>
+
+    <div id="block1">
+        <div class="common">
+            <center>
+            <h2>Drip Rate</h2>
+            <div class="box">
+                <img src="img/drip rate.svg" alt="img">
+                <h1 id="parameter1"></h1>
+            </div>
+            </center>
+        </div>
+       
+        <div class="common">
+            <center>
+                <h2>Total Bottle Level</h2>
+                <div class="box">
+                    <img src="img/total level.svg" class="test" alt="img">
+                    <h1 id="parameter2"></h1>
+                </div>
+                </center>
+        </div>
+    </div>
+    <center>
+        <img src="img/patient bed.png">
+        <h1 id="bed">Dashboard</h1>
+    </center>
+    <div id="block2">
+        <div class="common">
+            <center>
+                <h2>Current Level</h2>
+                <div class="box">
+                    <img src="img/current level.svg" alt="img">
+                    <h1 id="parameter3"></h1>
+                </div>
+                </center>
+        </div>
+        <div class="common">
+            <center>
+                <h2>Threshold Level</h2>
+                <div class="box">
+                    <img src="img/threshold.svg" alt="img">
+                    <h1 id="parameter4"></h1>
+                </div>
+                </center>
+        </div>
+    </div>
+    
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAPQWbGHZ5ehLCln4fDKSlWbCj_w3HN0w4",
+    authDomain: "dripon-product.firebaseapp.com",
+    projectId: "dripon-product",
+    storageBucket: "dripon-product.appspot.com",
+    messagingSenderId: "302869427942",
+    appId: "1:302869427942:web:ca12a8f27390552312ad27",
+    measurementId: "G-YJW81PN5R9"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+  const fs = firebase.firestore();
+</script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

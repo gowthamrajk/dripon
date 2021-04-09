@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="icon" href="img/logo.png" sizes="400x" >
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="outer">
+    <center>
+ <div class="login">
+     <img src="img/logo.png" alt="img" id="logo">
+     <form autocomplete="off" class="form-group" action="#" id="login-form">
+     <input type="email" placeholder="User Email" id="mail" name="email" class="common" required><br>
+     <input type="password" onmouseover="showPass('password')" onmouseout="hidePass('password')" name="password" placeholder="PassWord" id="password" class="common" required><br>
+     <button type="submit" class="button">login</button></form><br>
+ </div>
+ <div class="signup">
+     <h2>To Create an Account -> <a href="registration.html"><b>SignUp</b></a></h2>
+ </div>
+ </center>
+ </div>
+ <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAPQWbGHZ5ehLCln4fDKSlWbCj_w3HN0w4",
+    authDomain: "dripon-product.firebaseapp.com",
+    projectId: "dripon-product",
+    storageBucket: "dripon-product.appspot.com",
+    messagingSenderId: "302869427942",
+    appId: "1:302869427942:web:ca12a8f27390552312ad27",
+    measurementId: "G-YJW81PN5R9"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+  const fs = firebase.firestore();
+</script>
+ <script src='js/login.js'></script>
+</body>
+</html>
