@@ -18,5 +18,16 @@
 
 ![image](https://user-images.githubusercontent.com/43011442/115235925-5b7b9b80-a138-11eb-9e7f-9bfa72b4cbc4.png)
 
-# Main Dashboard 
+# Admin Dashboard 
 
+![image](https://user-images.githubusercontent.com/43011442/115236059-89f97680-a138-11eb-9440-1d24d763d204.png)
+
+![image](https://user-images.githubusercontent.com/43011442/115236085-9251b180-a138-11eb-842a-15f73effae69.png)
+
+# User Dashboard
+
+![image](https://user-images.githubusercontent.com/43011442/115236277-cf1da880-a138-11eb-9c2e-c43c4eabb6f4.png)
+
+# Notification
+
+![image](https://user-images.githubusercontent.com/43011442/115236313-dba20100-a138-11eb-9a13-2516e00f888c.png)
