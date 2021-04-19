@@ -31,3 +31,7 @@
 # Notification
 
 ![image](https://user-images.githubusercontent.com/43011442/115236313-dba20100-a138-11eb-9a13-2516e00f888c.png)
+
+# Logout Page
+
+![image](https://user-images.githubusercontent.com/43011442/115236401-f6747580-a138-11eb-9779-898145e2f3f1.png)
