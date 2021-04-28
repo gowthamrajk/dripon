@@ -32,13 +32,13 @@ const check=()=>{
     if(current_lvl < threshold_lvl)
     {
         count++;
-        threshold.innerText = "Bottle Level crossed below threshold limit, Please turn off";
+        threshold.innerText = "Bottle Level crossed below threshold limit, Turn off";
         threshold.style.background = "red";
     }
     else if(current_lvl == threshold_lvl)
     {
         count++;
-        threshold.innerText = "Bottle Level Reached threshold limit, Please be careful";
+        threshold.innerText = "Bottle Level Reached threshold limit, Be careful";
         threshold.style.background = "orange";
     }
     else
